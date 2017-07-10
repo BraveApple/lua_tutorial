@@ -1,5 +1,5 @@
 -- Meata class
-Rectangle = {area = 0, height = 0, width = 0}
+local Rectangle = {area = 0, height = 0, width = 0}
 
 -- 派生类的方法 new
 function Rectangle:new(height, width)
@@ -17,7 +17,4 @@ function Rectangle:printArea()
   print("矩形的面积为", self.area)
 end
 
-r = Rectangle:new(10, 20)
-print("矩形的高为", r.height)
-print("矩形的宽为", r.width)
-r:printArea()
+return Rectangle
