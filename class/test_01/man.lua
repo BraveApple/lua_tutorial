@@ -1,6 +1,8 @@
 local _name = "tom"
 local man = {}
 
+man.age = 30
+
 function man.GetName()
   return _name
 end
